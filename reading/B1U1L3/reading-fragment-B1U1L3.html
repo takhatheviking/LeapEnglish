@@ -1,0 +1,189 @@
+<style>
+.lr{--t:#1D9E75;--td:#0F6E56;--tl:#E1F5EE;--o:#EF9F27;--ol:#FAEEDA;--dk:#1a1a1a;--sf:#f7f9f8;--mu:#6b7280;--bd:rgba(0,0,0,0.08);--r:12px;font-family:'Nunito',sans-serif;}
+.lr *{box-sizing:border-box;margin:0;padding:0;}
+.lr-sec{display:flex;align-items:center;gap:8px;padding:16px 16px 8px;}
+.lr-pill{background:var(--t);color:#fff;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.8px;padding:3px 10px;border-radius:20px;}
+.lr-pill-uz{font-size:9px;opacity:.85;}
+.lr-line{flex:1;height:1px;background:var(--bd);}
+.lr-card{background:#fff;border-radius:var(--r);border:1px solid var(--bd);overflow:hidden;margin:0 16px 14px;}
+.lr-banner{height:100px;background:linear-gradient(135deg,#1D9E75,#085041);display:flex;align-items:center;justify-content:center;position:relative;}
+.lr-btxt{font-family:'Lora',serif;font-size:22px;font-weight:600;color:rgba(255,255,255,.12);text-align:center;padding:0 20px;}
+.lr-badge{position:absolute;bottom:10px;left:14px;background:var(--o);color:#4a2800;font-size:10px;font-weight:800;padding:3px 9px;border-radius:5px;}
+.lr-wc{position:absolute;bottom:12px;right:14px;font-size:11px;color:rgba(255,255,255,.5);font-weight:600;}
+.lr-body{padding:14px;}
+.lr-ten{font-size:16px;font-weight:800;color:var(--dk);line-height:1.2;}
+.lr-tuz{font-size:12px;color:var(--mu);font-weight:600;margin-bottom:10px;}
+.lr-prose{font-family:'Lora',serif;font-size:15px;line-height:1.8;color:#2d3748;}
+.lr-prose p{margin-bottom:10px;}
+.lr-prose p:last-child{margin-bottom:0;}
+.leap-vw{background:var(--tl);color:var(--td);font-weight:600;border-radius:4px;padding:0 3px;cursor:pointer;border-bottom:2px solid var(--t);font-style:normal;position:relative;}
+.leap-vpop{display:none;position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);background:var(--dk);border-radius:8px;padding:8px 12px;min-width:160px;max-width:220px;z-index:100;white-space:normal;pointer-events:none;}
+.leap-vpop::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:6px solid transparent;border-top-color:var(--dk);}
+.leap-vw.open .leap-vpop{display:block;}
+.lr-chips{display:flex;gap:6px;flex-wrap:wrap;padding:10px 14px 12px;border-top:1px solid var(--bd);background:var(--sf);}
+.lr-chip{background:#fff;border:1px solid var(--bd);border-radius:20px;padding:5px 12px;font-size:12px;font-weight:700;color:var(--td);cursor:pointer;}
+.lr-chip:active{background:var(--tl);}
+.lg-card{background:#fff;border-radius:var(--r);border:1px solid var(--bd);overflow:hidden;margin:0 16px 14px;}
+.lg-hdr{background:var(--dk);padding:13px 16px;display:flex;align-items:center;gap:10px;justify-content:space-between;}
+.lg-icon{width:34px;height:34px;background:var(--o);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;color:#4a2800;flex-shrink:0;}
+.lg-en{font-size:16px;font-weight:800;color:#fff;line-height:1.1;}
+.lg-uz{font-size:11px;color:rgba(255,255,255,.5);font-weight:600;margin-top:2px;}
+.lg-dot{width:8px;height:8px;background:var(--o);border-radius:50%;}
+.lg-body{padding:14px;display:flex;flex-direction:column;gap:12px;}
+.lg-formula{background:var(--dk);border-radius:8px;padding:13px 15px;text-align:center;}
+.lg-flbl{font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:rgba(255,255,255,.35);margin-bottom:2px;}
+.lg-fluz{font-size:9px;color:rgba(255,255,255,.22);font-weight:700;margin-bottom:7px;}
+.lg-ftxt{font-size:14px;font-weight:700;color:#fff;line-height:1.6;}
+.lg-ftxt .fp{color:var(--o);}
+.lg-ftxt .fv{color:#9FE1CB;}
+.lg-fnote{font-size:11px;color:rgba(255,255,255,.4);margin-top:4px;display:block;}
+.lg-uw{border-left:3px solid var(--t);padding:10px 12px;background:var(--tl);border-radius:0 8px 8px 0;}
+.lg-uwlen{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.7px;color:var(--td);margin-bottom:2px;}
+.lg-uwluz{font-size:9px;color:#3a7a60;font-weight:700;margin-bottom:6px;}
+.lg-uw ul{padding-left:14px;display:flex;flex-direction:column;gap:5px;}
+.lg-uw li{font-size:12.5px;color:var(--td);}
+.lg-uw li span{display:block;font-size:11px;color:#3a7a60;font-weight:600;}
+.lg-exlbl{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.7px;color:var(--mu);margin-bottom:7px;}
+.lg-exlbl span{font-size:9px;color:#9ca3af;}
+.lg-exrow{display:flex;gap:9px;padding:9px 0;border-bottom:1px solid var(--bd);}
+.lg-exrow:last-child{border-bottom:none;}
+.lg-enum{width:20px;height:20px;background:var(--t);color:#fff;border-radius:50%;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
+.lg-een{font-family:'Lora',serif;font-size:13.5px;color:var(--dk);margin-bottom:2px;line-height:1.45;}
+.lg-een .v{color:var(--td);font-weight:600;}
+.lg-euz{font-size:11.5px;color:var(--mu);font-weight:600;}
+.lg-forms{display:flex;gap:6px;}
+.lg-fb{flex:1;background:var(--sf);border:1px solid var(--bd);border-radius:8px;padding:10px 11px;}
+.lg-fben{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--t);margin-bottom:1px;}
+.lg-fbuz{font-size:9px;color:#3a7a60;font-weight:700;margin-bottom:5px;}
+.lg-fbtxt{font-family:'Lora',serif;font-size:12.5px;color:var(--dk);line-height:1.5;}
+.lg-tip{background:var(--ol);border-radius:8px;padding:11px 13px;display:flex;gap:9px;}
+.lg-tipico{font-size:16px;flex-shrink:0;line-height:1.2;}
+.lg-tipen{font-size:12.5px;font-weight:600;color:#5c3a00;line-height:1.5;}
+.lg-tipuz{font-size:11px;font-weight:600;color:#8b5700;margin-top:4px;line-height:1.4;}
+.lg-tip strong{color:#3d2700;}
+</style>
+
+<div class="lr">
+
+  <!-- READING SECTION -->
+  <div class="lr-sec">
+    <div class="lr-pill">Reading <span class="lr-pill-uz">· O'qish</span></div>
+    <div class="lr-line"></div>
+  </div>
+
+  <div class="lr-card">
+    <div class="lr-banner">
+      <div class="lr-btxt">Daily Routines</div>
+      <div class="lr-badge">Short Text · Qisqa matn</div>
+      <div class="lr-wc">~120 words</div>
+    </div>
+    <div class="lr-body">
+      <div class="lr-ten">Tom's Morning Routine</div>
+      <div class="lr-tuz">Tomning ertalabki odatlari</div>
+      <div class="lr-prose">
+        <p>Tom <em class="leap-vw" data-en="wake up" data-def="to stop sleeping" data-uz="uyg'onmoq">wakes up<span class="leap-vpop"></span></em> at 7 o'clock every morning. He <em class="leap-vw" data-en="get up" data-def="to get out of bed" data-uz="o'rnidan turmoq">gets up<span class="leap-vpop"></span></em> quickly and goes to the bathroom. First, he <em class="leap-vw" data-en="brush" data-def="to clean with a brush" data-uz="cho'tka bilan tozalamoq">brushes<span class="leap-vpop"></span></em> his teeth and washes his face.</p>
+        <p>After that, Tom <em class="leap-vw" data-en="have" data-def="to eat or drink a meal" data-uz="(ovqat) yemoq, ichmoq">has<span class="leap-vpop"></span></em> breakfast. He never <em class="leap-vw" data-en="skip" data-def="to miss something on purpose" data-uz="o'tkazib yubormoq">skips<span class="leap-vpop"></span></em> breakfast.</p>
+        <p>At 8:15, he <em class="leap-vw" data-en="leave" data-def="to go away from a place" data-uz="ketmoq, chiqib ketmoq">leaves<span class="leap-vpop"></span></em> the house and takes the bus to work. He always <em class="leap-vw" data-en="arrive" data-def="to reach a destination" data-uz="yetib kelmoq">arrives<span class="leap-vpop"></span></em> at the office <em class="leap-vw" data-en="on time" data-def="not late; at the correct time" data-uz="o'z vaqtida">on time<span class="leap-vpop"></span></em>.</p>
+      </div>
+    </div>
+    <div class="lr-chips">
+      <div class="lr-chip" onclick="leapOpenVocab('wake up','to stop sleeping','uyg\'onmoq')">wake up</div>
+      <div class="lr-chip" onclick="leapOpenVocab('get up','to get out of bed','o\'rnidan turmoq')">get up</div>
+      <div class="lr-chip" onclick="leapOpenVocab('skip','to miss something on purpose','o\'tkazib yubormoq')">skip</div>
+      <div class="lr-chip" onclick="leapOpenVocab('on time','not late; at the correct time','o\'z vaqtida')">on time</div>
+      <div class="lr-chip" onclick="leapOpenVocab('arrive','to reach a destination','yetib kelmoq')">arrive</div>
+    </div>
+  </div>
+
+  <!-- GRAMMAR SECTION -->
+  <div class="lr-sec">
+    <div class="lr-pill">Grammar <span class="lr-pill-uz">· Grammatika</span></div>
+    <div class="lr-line"></div>
+  </div>
+
+  <div class="lg-card">
+    <div class="lg-hdr">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div class="lg-icon">G</div>
+        <div>
+          <div class="lg-en">Present Simple</div>
+          <div class="lg-uz">Hozirgi oddiy zamon</div>
+        </div>
+      </div>
+      <div class="lg-dot"></div>
+    </div>
+    <div class="lg-body">
+
+      <div class="lg-formula">
+        <div class="lg-flbl">Formula</div>
+        <div class="lg-fluz">Qoida</div>
+        <div class="lg-ftxt">
+          <span class="fp">Subject (Ega)</span> + <span class="fv">Verb (Fe'l)</span>
+          <span class="lg-fnote">He / She / It → fe'l + <span class="fp">-s / -es</span></span>
+        </div>
+      </div>
+
+      <div class="lg-uw">
+        <div class="lg-uwlen">When do we use it?</div>
+        <div class="lg-uwluz">Qachon ishlatamiz?</div>
+        <ul>
+          <li>Regular habits &amp; daily routines <span>Muntazam odatlar va kundalik tartib</span></li>
+          <li>Facts that are always true <span>Har doim haqiqat bo'lgan faktlar</span></li>
+          <li>Schedules &amp; timetables <span>Jadvallar va vaqt jadvallari</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="lg-exlbl">Examples from the text <span>· Matndagi misollar</span></div>
+        <div class="lg-exrow">
+          <div class="lg-enum">1</div>
+          <div>
+            <div class="lg-een">Tom <span class="v">wakes up</span> at 7 o'clock every morning.</div>
+            <div class="lg-euz">Tom har kuni ertalab soat 7 da uyg'onadi.</div>
+          </div>
+        </div>
+        <div class="lg-exrow">
+          <div class="lg-enum">2</div>
+          <div>
+            <div class="lg-een">He never <span class="v">skips</span> breakfast.</div>
+            <div class="lg-euz">U hech qachon nonushtani o'tkazib yubormaydi.</div>
+          </div>
+        </div>
+        <div class="lg-exrow">
+          <div class="lg-enum">3</div>
+          <div>
+            <div class="lg-een">She <span class="v">goes</span> to work by bus.</div>
+            <div class="lg-euz">U ishga avtobus bilan boradi.</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="lg-exlbl">Other forms <span>· Boshqa shakllar</span></div>
+        <div class="lg-forms">
+          <div class="lg-fb">
+            <div class="lg-fben">Negative</div>
+            <div class="lg-fbuz">Inkor shakli</div>
+            <div class="lg-fbtxt">I <strong>don't</strong> eat meat.<br>He <strong>doesn't</strong> drive.</div>
+          </div>
+          <div class="lg-fb">
+            <div class="lg-fben">Question</div>
+            <div class="lg-fbuz">So'roq shakli</div>
+            <div class="lg-fbtxt"><strong>Do</strong> you like tea?<br><strong>Does</strong> she work?</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg-tip">
+        <div class="lg-tipico">💡</div>
+        <div>
+          <div class="lg-tipen"><strong>Remember:</strong> Add <strong>-s / -es</strong> only when the subject is <strong>he, she</strong> or <strong>it</strong>. I / You / We / They use the base form.</div>
+          <div class="lg-tipuz"><strong>Eslab qoling:</strong> <strong>-s / -es</strong> faqat <strong>he, she, it</strong> bilan ishlatiladi. I / You / We / They bilan fe'lning asosiy shakli ishlatiladi.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div style="height:8px;"></div>
+</div>
