@@ -1,0 +1,85 @@
+{
+  "version": "1.0.0",
+  "level": "B1",
+  "label": "Beginner",
+  "units": [
+    {
+      "id": "B1U1",
+      "title": "Unit 1",
+      "lessons": [
+        {
+          "id": "B1U1L1",
+          "title": "Lesson 1",
+          "screens": ["video", "reading", "exercises"],
+          "videoRef": "B1U1L1",
+          "readingRef": "B1U1L1",
+          "exerciseRef": "B1U1L1"
+        },
+        {
+          "id": "B1U1L2",
+          "title": "Lesson 2",
+          "screens": ["video", "reading", "exercises"],
+          "videoRef": "B1U1L2",
+          "readingRef": "B1U1L2",
+          "exerciseRef": "B1U1L2"
+        },
+        {
+          "id": "B1U1L3",
+          "title": "Lesson 3",
+          "screens": ["video", "reading", "exercises"],
+          "videoRef": "B1U1L3",
+          "readingRef": "B1U1L3",
+          "exerciseRef": "B1U1L3"
+        },
+        {
+          "id": "B1U1L4",
+          "title": "Lesson 4",
+          "screens": ["video", "reading", "exercises"],
+          "videoRef": "B1U1L4",
+          "readingRef": "B1U1L4",
+          "exerciseRef": "B1U1L4"
+        },
+        {
+          "id": "B1U1L5",
+          "title": "Lesson 5",
+          "screens": ["video", "reading", "exercises"],
+          "videoRef": "B1U1L5",
+          "readingRef": "B1U1L5",
+          "exerciseRef": "B1U1L5"
+        },
+        {
+          "id": "B1U1L6",
+          "title": "Lesson 6",
+          "screens": ["video", "reading", "exercises"],
+          "videoRef": "B1U1L6",
+          "readingRef": "B1U1L6",
+          "exerciseRef": "B1U1L6"
+        },
+        {
+          "id": "B1U1L7",
+          "title": "Lesson 7",
+          "screens": ["video", "reading", "exercises"],
+          "videoRef": "B1U1L7",
+          "readingRef": "B1U1L7",
+          "exerciseRef": "B1U1L7"
+        },
+        {
+          "id": "B1U1L8",
+          "title": "Lesson 8",
+          "screens": ["video", "reading", "exercises"],
+          "videoRef": "B1U1L8",
+          "readingRef": "B1U1L8",
+          "exerciseRef": "B1U1L8"
+        },
+        {
+          "id": "B1U1L9",
+          "title": "Lesson 9",
+          "screens": ["video", "reading", "exercises"],
+          "videoRef": "B1U1L9",
+          "readingRef": "B1U1L9",
+          "exerciseRef": "B1U1L9"
+        }
+      ]
+    }
+  ]
+}
