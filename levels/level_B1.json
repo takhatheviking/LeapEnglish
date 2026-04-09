@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0",
+  "level": "B1",
+  "label": "Beginner",
+  "cefr": "A1",
+  "units": [
+    {
+      "id": "B1U1",
+      "name": "Unit 1 — Meeting People",
+      "topic": "Greetings & Introductions",
+      "lessons": [
+        { "id": "B1U1L1", "title": "Lesson 1 — Introducing Yourself",     "screens": ["video","reading","exercises"], "videoRef": "B1U1L1", "readingRef": "B1U1L1", "exerciseRef": "B1U1L1" },
+        { "id": "B1U1L2", "title": "Lesson 2 — Saying Hello & Goodbye",    "screens": ["video","reading","exercises"], "videoRef": "B1U1L2", "readingRef": "B1U1L2", "exerciseRef": "B1U1L2" },
+        { "id": "B1U1L3", "title": "Lesson 3 — Numbers & Age",             "screens": ["video","reading","exercises"], "videoRef": "B1U1L3", "readingRef": "B1U1L3", "exerciseRef": "B1U1L3" },
+        { "id": "B1U1L4", "title": "Lesson 4 — Countries & Nationalities", "screens": ["video","reading","exercises"], "videoRef": "B1U1L4", "readingRef": "B1U1L4", "exerciseRef": "B1U1L4" },
+        { "id": "B1U1L5", "title": "Lesson 5 — Jobs & Occupations",        "screens": ["video","reading","exercises"], "videoRef": "B1U1L5", "readingRef": "B1U1L5", "exerciseRef": "B1U1L5" },
+        { "id": "B1U1L6", "title": "Lesson 6 — Family Members",            "screens": ["video","reading","exercises"], "videoRef": "B1U1L6", "readingRef": "B1U1L6", "exerciseRef": "B1U1L6" },
+        { "id": "B1U1L7", "title": "Lesson 7 — Days & Months",             "screens": ["video","reading","exercises"], "videoRef": "B1U1L7", "readingRef": "B1U1L7", "exerciseRef": "B1U1L7" },
+        { "id": "B1U1L8", "title": "Lesson 8 — Colors & Descriptions",     "screens": ["video","reading","exercises"], "videoRef": "B1U1L8", "readingRef": "B1U1L8", "exerciseRef": "B1U1L8" },
+        { "id": "B1U1L9", "title": "Lesson 9 — Review & Practice",         "screens": ["video","reading","exercises"], "videoRef": "B1U1L9", "readingRef": "B1U1L9", "exerciseRef": "B1U1L9" }
+      ]
+    }
+  ]
+}
