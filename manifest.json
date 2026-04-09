@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-04-07",
+  "fragments": {
+    "B1U1L1": { "reading": true,  "exercises": true  },
+    "B1U1L2": { "reading": false, "exercises": false },
+    "B1U1L3": { "reading": true,  "exercises": false },
+    "B1U1L4": { "reading": false, "exercises": false },
+    "B1U1L5": { "reading": false, "exercises": false },
+    "B1U1L6": { "reading": false, "exercises": false },
+    "B1U1L7": { "reading": false, "exercises": false },
+    "B1U1L8": { "reading": false, "exercises": false },
+    "B1U1L9": { "reading": false, "exercises": false }
+  }
+}
