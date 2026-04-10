@@ -2,14 +2,14 @@
   "customerSubdomain": "customer-nufypd2mram5kiwn",
   "bunnyLibraryId": "635028",
   "videos": {
-    "B1U1L1": { "provider": "bunny",      "uid": "43f30ef5-8818-4d3a-8f58-817b4a5fe380" },
-    "B1U1L2": { "provider": "bunny",      "uid": "fe74d6c3-45e1-4a51-b81b-5a55f9351c70" },
-    "B1U1L3": { "provider": "bunny",      "uid": "44ff039c-dcf8-48e8-8345-f3b2244ca0c7" },
-    "B1U1L4": { "provider": "bunny",      "uid": "12d34bc2-6629-42ee-a5f2-8852368d810e" },
-    "B1U1L5": { "provider": "cloudflare", "uid": "f67524b5df768376bacdcb82b2539e16" },
-    "B1U1L6": { "provider": "cloudflare", "uid": "d5ce9d3b60e3b374532d5c09e38c7862" },
-    "B1U1L7": { "provider": "cloudflare", "uid": "548bcc71064cc1b5df7f319528c81add" },
-    "B1U1L8": { "provider": "cloudflare", "uid": "05e403ab12d55c20f05b19f3a9a8f982" },
-    "B1U1L9": { "provider": "cloudflare", "uid": "aab366294ca481cba6b8566350486178" }
+    "B1U1L1": { "provider": "bunny", "uid": "43f30ef5-8818-4d3a-8f58-817b4a5fe380" },
+    "B1U1L2": { "provider": "bunny", "uid": "fe74d6c3-45e1-4a51-b81b-5a55f9351c70" },
+    "B1U1L3": { "provider": "bunny", "uid": "44ff039c-dcf8-48e8-8345-f3b2244ca0c7" },
+    "B1U1L4": { "provider": "bunny", "uid": "12d34bc2-6629-42ee-a5f2-8852368d810e" },
+    "B1U1L5": { "provider": "bunny", "uid": "277ae7ec-4e66-44a1-b8bf-4fc9a6967b61" },
+    "B1U1L6": { "provider": "bunny", "uid": "b002455f-6090-47e8-a346-7a2c1d73db85" },
+    "B1U1L7": { "provider": "bunny", "uid": "00efe223-bac5-47e0-a444-f1362af22d27" },
+    "B1U1L8": { "provider": "bunny", "uid": "ae06cd80-9bf2-4b22-8349-7f1d8a7882fe" },
+    "B1U1L9": { "provider": "bunny", "uid": "e85ba878-a005-4752-9997-ee1182d1f59b" }
   }
 }
