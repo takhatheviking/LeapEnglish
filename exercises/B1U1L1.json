@@ -15,26 +15,29 @@
   {
     "id": "q2",
     "type": "select",
-    "question": "Which is correct for 'He'?",
+    "question": "Which word goes with 'He'?",
     "options": ["am", "are", "is", "be"],
     "correct": 2,
     "explanation": "Use 'is' with he/she/it. He is a teacher. She is a student."
   },
   {
     "id": "q3",
+    "type": "match",
+    "question": "Match the words to their Uzbek translations:",
+    "pairs": [
+      { "en": "hello", "uz": "salom" },
+      { "en": "teacher", "uz": "o'qituvchi" },
+      { "en": "student", "uz": "talaba" },
+      { "en": "name", "uz": "ism" }
+    ]
+  },
+  {
+    "id": "q4",
     "type": "input",
     "question": "Complete: We ___ happy to meet you.",
     "placeholder": "am / is / are?",
     "correct": ["are"],
     "explanation": "Use 'are' with we/you/they. 'We are happy to meet you.'"
-  },
-  {
-    "id": "q4",
-    "type": "select",
-    "question": "Sara ___ from Tashkent. Which word fits?",
-    "options": ["am", "are", "is", "be"],
-    "correct": 2,
-    "explanation": "Sara = she, so we use 'is'. Sara is from Tashkent."
   },
   {
     "id": "q5",
