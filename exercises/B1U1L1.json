@@ -1,83 +1,86 @@
 [
-{
-"id": "q1",
-"type": "mcq",
-"question": "Choose the correct sentence:",
-"options": [
-"I is a student.",
-"I am a student.",
-"I are a student.",
-"I be a student."
-],
-"correct": 1,
-"explanation": "We always use 'am' with 'I'. Never say 'I is' or 'I are'."
-},
-{
-"id": "q2",
-"type": "select",
-"question": "Which is correct for 'He'?",
-"options": ["am", "are", "is", "be"],
-"correct": 2,
-"explanation": "Use 'is' with he/she/it. He is a teacher. She is a student."
-},
-{
-"id": "q3",
-"type": "input",
-"question": "Complete: We ___ happy to meet you.",
-"placeholder": "am / is / are?",
-"correct": ["are"],
-"explanation": "Use 'are' with we/you/they. 'We are happy to meet you.'"
-},
-{
-"id": "q4",
-"type": "dragdrop",
-"question": "Arrange the words to make a correct sentence:",
-"sentence": ["She", "BLANK", "a", "BLANK"],
-"words": ["is", "am", "teacher", "student"],
-"answer": ["is", "teacher"],
-"explanation": "She is a teacher. Use 'is' with she/he/it."
-},
-{
-"id": "q5",
-"type": "mcq",
-"question": "What is the negative form of 'He is from Tashkent'?",
-"options": [
-"He not is from Tashkent.",
-"He isn't from Tashkent.",
-"He aren't from Tashkent.",
-"He amn't from Tashkent."
-],
-"correct": 1,
-"explanation": "Negative of 'is': is not / isn't. 'He isn't from Tashkent.' is correct."
-},
-{
-"id": "q6",
-"type": "input",
-"question": "Make it negative: I am a teacher. → I ___ a teacher.",
-"placeholder": "Type two words...",
-"correct": ["am not", "I am not", "'m not"],
-"explanation": "Negative of 'I am' is 'I am not' or 'I'm not'. Never 'I isn't'."
-},
-{
-"id": "q7",
-"type": "select",
-"question": "Choose the correct question form:",
-"options": [
-"Am you a student?",
-"Is you a student?",
-"Are you a student?",
-"Be you a student?"
-],
-"correct": 2,
-"explanation": "'Are' is used with 'you' in questions. 'Are you a student?' is correct."
-},
-{
-"id": "q8",
-"type": "dragdrop",
-"question": "Build the question:",
-"sentence": ["BLANK", "he", "BLANK", "friend?"],
-"words": ["Is", "Are", "your", "mine"],
-"answer": ["Is", "your"],
-"explanation": "'Is he your friend?' — Use 'Is' for he/she/it questions."
-}
+  {
+    "id": "q1",
+    "type": "mcq",
+    "question": "Choose the correct sentence:",
+    "options": [
+      "I is a student.",
+      "I am a student.",
+      "I are a student.",
+      "I be a student."
+    ],
+    "correct": 1,
+    "explanation": "We always use 'am' with 'I'. Never say 'I is' or 'I are'."
+  },
+  {
+    "id": "q2",
+    "type": "select",
+    "question": "Which is correct for 'He'?",
+    "options": ["am", "are", "is", "be"],
+    "correct": 2,
+    "explanation": "Use 'is' with he/she/it. He is a teacher. She is a student."
+  },
+  {
+    "id": "q3",
+    "type": "input",
+    "question": "Complete: We ___ happy to meet you.",
+    "placeholder": "am / is / are?",
+    "correct": ["are"],
+    "explanation": "Use 'are' with we/you/they. 'We are happy to meet you.'"
+  },
+  {
+    "id": "q4",
+    "type": "select",
+    "question": "Sara ___ from Tashkent. Which word fits?",
+    "options": ["am", "are", "is", "be"],
+    "correct": 2,
+    "explanation": "Sara = she, so we use 'is'. Sara is from Tashkent."
+  },
+  {
+    "id": "q5",
+    "type": "mcq",
+    "question": "What is the negative form of 'He is from Tashkent'?",
+    "options": [
+      "He not is from Tashkent.",
+      "He isn't from Tashkent.",
+      "He aren't from Tashkent.",
+      "He amn't from Tashkent."
+    ],
+    "correct": 1,
+    "explanation": "Negative of 'is': is not / isn't. 'He isn't from Tashkent.' is correct."
+  },
+  {
+    "id": "q6",
+    "type": "input",
+    "question": "Make it negative: I am a teacher. → I ___ a teacher.",
+    "placeholder": "Type two words...",
+    "correct": ["am not", "I am not", "'m not"],
+    "explanation": "Negative of 'I am' is 'I am not' or 'I'm not'. Never 'I isn't'."
+  },
+  {
+    "id": "q7",
+    "type": "select",
+    "question": "Choose the correct question form:",
+    "options": [
+      "Am you a student?",
+      "Is you a student?",
+      "Are you a student?",
+      "Be you a student?"
+    ],
+    "correct": 2,
+    "explanation": "'Are' is used with 'you' in questions. 'Are you a student?' is correct."
+  },
+  {
+    "id": "q8",
+    "type": "mcq",
+    "question": "Which question is correct?",
+    "options": [
+      "Are he your friend?",
+      "Am he your friend?",
+      "Is he your friend?",
+      "Be he your friend?"
+    ],
+    "correct": 2,
+    "explanation": "Use 'Is' for questions with he/she/it. 'Is he your friend?' is correct."
+  }
 ]
