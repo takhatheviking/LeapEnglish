@@ -1217,15 +1217,23 @@ async function playVideo() {
     if (!res.ok) res = await fetch(REPO + '/videos/beginner.json');
     const data = await res.json();
 
-    const uid = data.videos[lesson.id];
-    if (!uid) {
+    const videoEntry = data.videos[lesson.id];
+    if (!videoEntry) {
       titleEl.textContent = t('video_not_available');
       setTimeout(() => { titleEl.textContent = t('tap_to_play'); }, 2500);
       return;
     }
 
-    const iframeUrl = 'https://' + data.customerSubdomain
-      + '.cloudflarestream.com/' + uid + '/iframe';
+    // Support both legacy (string UID) and provider-aware (object) formats
+    const provider = videoEntry.provider || 'cloudflare';
+    const uid = videoEntry.uid || videoEntry;
+
+    let iframeUrl;
+    if (provider === 'bunny') {
+      iframeUrl = 'https://iframe.mediadelivery.net/embed/' + data.bunnyLibraryId + '/' + uid + '?autoplay=false&preload=false';
+    } else {
+      iframeUrl = 'https://' + data.customerSubdomain + '.cloudflarestream.com/' + uid + '/iframe';
+    }
 
     const iframe = document.getElementById('lesson-video');
     iframe.src = iframeUrl;
