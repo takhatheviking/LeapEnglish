@@ -1,0 +1,180 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Lora:ital,wght@0,400;1,400&display=swap');
+.lr{--t:#1D9E75;--td:#0F6E56;--tl:#E1F5EE;--o:#EF9F27;--ol:#FAEEDA;--dk:#1a1a1a;--sf:#f7f9f8;--mu:#6b7280;--bd:rgba(0,0,0,0.08);--r:12px;font-family:'Nunito',sans-serif;}
+.lr *{box-sizing:border-box;margin:0;padding:0;}
+.lr-sec{display:flex;align-items:center;gap:8px;padding:16px 16px 8px;}
+.lr-pill{background:var(--t);color:#fff;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.8px;padding:3px 10px;border-radius:20px;}
+.lr-pill-uz{font-size:9px;opacity:.85;}
+.lr-line{flex:1;height:1px;background:var(--bd);}
+.lr-card{background:#fff;border-radius:var(--r);border:1px solid var(--bd);overflow:hidden;margin:0 16px 14px;}
+.lr-banner{height:100px;background:linear-gradient(135deg,#1D9E75,#085041);display:flex;align-items:center;justify-content:center;position:relative;}
+.lr-btxt{font-family:'Lora',serif;font-size:22px;font-weight:600;color:rgba(255,255,255,.12);text-align:center;padding:0 20px;line-height:1.3;}
+.lr-badge{position:absolute;bottom:10px;left:14px;background:var(--o);color:#4a2800;font-size:10px;font-weight:800;padding:3px 9px;border-radius:5px;}
+.lr-wc{position:absolute;bottom:12px;right:14px;font-size:11px;color:rgba(255,255,255,.5);font-weight:600;}
+.lr-body{padding:14px;}
+.lr-ten{font-size:16px;font-weight:800;color:var(--dk);line-height:1.2;}
+.lr-tuz{font-size:12px;color:var(--mu);font-weight:600;margin-bottom:10px;}
+.lr-prose{font-family:'Lora',serif;font-size:15px;line-height:1.8;color:#2d3748;}
+.lr-prose p{margin-bottom:10px;}
+.lr-prose p:last-child{margin-bottom:0;}
+.leap-vw{background:var(--tl);color:var(--td);font-weight:600;border-radius:4px;padding:1px 4px;cursor:pointer;border-bottom:2px solid var(--t);font-style:normal;}
+.lr-chips{display:flex;gap:6px;flex-wrap:wrap;padding:10px 14px 12px;border-top:1px solid var(--bd);}
+.lr-chip{background:var(--tl);color:var(--td);font-size:12px;font-weight:700;padding:4px 11px;border-radius:20px;cursor:pointer;border:1.5px solid rgba(29,158,117,.2);}
+.lr-gr{background:#fff;border-radius:var(--r);border:1px solid var(--bd);overflow:hidden;margin:0 16px 14px;}
+.lr-gh{background:var(--dk);padding:14px 16px;display:flex;align-items:center;gap:10px;}
+.lr-gicon{font-size:24px;}
+.lr-gname{font-size:16px;font-weight:800;color:#fff;}
+.lr-gnameuz{font-size:11px;color:rgba(255,255,255,.5);font-weight:600;margin-top:1px;}
+.lr-gb{padding:14px 16px;}
+.lr-formula{background:var(--sf);border-radius:9px;padding:11px 14px;font-size:13px;font-weight:700;color:var(--dk);margin-bottom:12px;border-left:3px solid var(--t);letter-spacing:.1px;}
+.lr-uw{background:var(--ol);border-radius:9px;padding:11px 14px;margin-bottom:12px;}
+.lr-uwlabel{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.7px;color:#7a4800;margin-bottom:6px;}
+.lr-uwrow{display:flex;flex-direction:column;gap:4px;}
+.lr-uwitem{font-size:13px;color:#5c3700;font-weight:600;line-height:1.4;}
+.lr-uwitem::before{content:"✓ ";}
+.lr-exlabel{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.7px;color:var(--mu);margin-bottom:8px;}
+.lr-ex{margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid var(--bd);}
+.lr-ex:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+.lr-en{font-family:'Lora',serif;font-size:14px;color:var(--dk);line-height:1.5;}
+.lr-en .v{color:var(--t);font-weight:700;}
+.lr-uz{font-size:12px;color:var(--mu);font-weight:600;margin-top:3px;}
+.lr-form{background:var(--sf);border-radius:9px;padding:11px 14px;margin-top:12px;}
+.lr-flabel{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.7px;color:var(--mu);margin-bottom:8px;}
+.lr-frow{display:flex;flex-direction:column;gap:6px;}
+.lr-fitem{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--dk);line-height:1.4;}
+.lr-ftag{background:rgba(0,0,0,.06);border-radius:4px;font-size:10px;font-weight:800;padding:2px 6px;color:var(--mu);white-space:nowrap;margin-top:2px;}
+.lr-tip{background:var(--tl);border-radius:9px;padding:11px 14px;margin-top:12px;display:flex;gap:8px;align-items:flex-start;}
+.lr-tipico{font-size:16px;flex-shrink:0;}
+.lr-tiptext{font-size:13px;color:var(--td);font-weight:600;line-height:1.5;}
+</style>
+
+<div class="lr">
+
+  <!-- ═══ READING SECTION ═══ -->
+  <div class="lr-sec">
+    <div class="lr-pill">Reading <span class="lr-pill-uz">· O'qish</span></div>
+    <div class="lr-line"></div>
+  </div>
+
+  <div class="lr-card">
+    <div class="lr-banner">
+      <div class="lr-btxt">See You Later!</div>
+      <div class="lr-badge">Foundation</div>
+      <div class="lr-wc">42 words</div>
+    </div>
+    <div class="lr-body">
+      <div class="lr-ten">Saying Goodbye</div>
+      <div class="lr-tuz">Xayrlashish</div>
+      <div class="lr-prose">
+        <p>
+          It's morning. Tom goes to work.
+          <em class="leap-vw" data-en="Goodbye" data-def="formal way to say farewell" data-uz="xayr">Goodbye</em>!
+          <em class="leap-vw" data-en="Have a nice day" data-def="wish for a good day" data-uz="yaxshi kun tilayman">Have a nice day</em>!
+        </p>
+        <p>
+          <em class="leap-vw" data-en="Bye" data-def="casual way to say goodbye" data-uz="xayr (norasmiy)">Bye</em>!
+          <em class="leap-vw" data-en="See you later" data-def="we'll meet again soon" data-uz="keyinroq ko'rishguncha">See you later</em>, Mum!
+        </p>
+        <p>
+          At work, Tom meets his friend Paul. After lunch, Paul leaves.
+          Bye, Tom! <em class="leap-vw" data-en="Take care" data-def="be safe, look after yourself" data-uz="o'zingizga qarang">Take care</em>!
+        </p>
+        <p>
+          At night, Tom says to his family:
+          <em class="leap-vw" data-en="Goodnight" data-def="said before sleep" data-uz="xayrli tun">Goodnight</em>!
+          <em class="leap-vw" data-en="Night night" data-def="casual, warm goodnight" data-uz="xayrli tun (iliq)">Night night</em>, Daddy.
+        </p>
+      </div>
+    </div>
+    <div class="lr-chips">
+      <div class="lr-chip" onclick="leapOpenVocab(this.dataset.en, this.dataset.def, this.dataset.uz)" data-en="Goodbye" data-def="formal way to say farewell" data-uz="xayr">Goodbye</div>
+      <div class="lr-chip" onclick="leapOpenVocab(this.dataset.en, this.dataset.def, this.dataset.uz)" data-en="Bye" data-def="casual way to say goodbye" data-uz="xayr (norasmiy)">Bye</div>
+      <div class="lr-chip" onclick="leapOpenVocab(this.dataset.en, this.dataset.def, this.dataset.uz)" data-en="See you later" data-def="we'll meet again soon" data-uz="keyinroq ko'rishguncha">See you later</div>
+      <div class="lr-chip" onclick="leapOpenVocab(this.dataset.en, this.dataset.def, this.dataset.uz)" data-en="Have a nice day" data-def="wish for a good day" data-uz="yaxshi kun tilayman">Have a nice day</div>
+      <div class="lr-chip" onclick="leapOpenVocab(this.dataset.en, this.dataset.def, this.dataset.uz)" data-en="Take care" data-def="be safe, look after yourself" data-uz="o'zingizga qarang">Take care</div>
+      <div class="lr-chip" onclick="leapOpenVocab(this.dataset.en, this.dataset.def, this.dataset.uz)" data-en="Night night" data-def="casual, warm goodnight" data-uz="xayrli tun (iliq)">Night night</div>
+    </div>
+  </div>
+
+  <!-- ═══ GRAMMAR SECTION ═══ -->
+  <div class="lr-sec">
+    <div class="lr-pill">Everyday English <span class="lr-pill-uz">· Kundalik muloqot</span></div>
+    <div class="lr-line"></div>
+  </div>
+
+  <div class="lr-gr">
+    <div class="lr-gh">
+      <div class="lr-gicon">📘</div>
+      <div>
+        <div class="lr-gname">Goodbyes and Common Phrases</div>
+        <div class="lr-gnameuz">Xayrlashish va kundalik iboralar</div>
+      </div>
+    </div>
+    <div class="lr-gb">
+
+      <div class="lr-formula">Goodbye / Bye / See you later / Have a nice day / Take care / Night night</div>
+
+      <div class="lr-uw">
+        <div class="lr-uwlabel">When to use · Qachon ishlatiladi</div>
+        <div class="lr-uwrow">
+          <div class="lr-uwitem">Goodbye: rasmiy vaziyatda yoki uzoqroq ajralishda</div>
+          <div class="lr-uwitem">Bye / See you later: do'stlar, oila, tanish odamlar bilan</div>
+          <div class="lr-uwitem">Have a nice day: xizmatchilar, do'kon, ish joyida</div>
+          <div class="lr-uwitem">Night night: faqat oila va juda yaqin odamlar bilan</div>
+        </div>
+      </div>
+
+      <div class="lr-exlabel">Examples from the lesson · Darsdan misollar</div>
+
+      <div class="lr-ex">
+        <div class="lr-en"><span class="v">Goodbye</span>! Have a nice day!</div>
+        <div class="lr-uz">Xayr! Yaxshi kun tilayman!</div>
+      </div>
+      <div class="lr-ex">
+        <div class="lr-en">Bye! <span class="v">See you later</span>, Mum!</div>
+        <div class="lr-uz">Xayr! Keyinroq ko'rishguncha, oyijon!</div>
+      </div>
+      <div class="lr-ex">
+        <div class="lr-en">Bye, Tom! <span class="v">Take care</span>!</div>
+        <div class="lr-uz">Xayr, Tom! O'zingizga qarang!</div>
+      </div>
+      <div class="lr-ex">
+        <div class="lr-en">Goodnight! <span class="v">Sleep well</span>.</div>
+        <div class="lr-uz">Xayrli tun! Yaxshi uxlang.</div>
+      </div>
+      <div class="lr-ex">
+        <div class="lr-en"><span class="v">Night night</span>, Daddy.</div>
+        <div class="lr-uz">Xayrli tun, dadajon.</div>
+      </div>
+
+      <div class="lr-form">
+        <div class="lr-flabel">Responses &amp; similar phrases · Javoblar va o'xshash iboralar</div>
+        <div class="lr-frow">
+          <div class="lr-fitem">
+            <span class="lr-ftag">+</span>
+            Thanks, you too! / Rahmat, sizga ham!
+          </div>
+          <div class="lr-fitem">
+            <span class="lr-ftag">+</span>
+            See you tomorrow. / Ertaga ko'rishguncha.
+          </div>
+          <div class="lr-fitem">
+            <span class="lr-ftag">+</span>
+            Have a good weekend! / Yaxshi dam oling!
+          </div>
+          <div class="lr-fitem">
+            <span class="lr-ftag">+</span>
+            Catch you later. (juda norasmiy) / Keyinroq ko'rishamiz.
+          </div>
+        </div>
+      </div>
+
+      <div class="lr-tip">
+        <div class="lr-tipico">💡</div>
+        <div class="lr-tiptext">"Have a nice day" ga javob: <b>Thanks, you too!</b> (Rahmat, sizga ham!). Shunchaki "Thank you" deyish ham yaxshi, lekin <b>you too</b> qo'shsangiz, tabiiy va iliq chiqadi.</div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
