@@ -3,13 +3,13 @@
   "updated": "2026-04-07",
   "fragments": {
     "B1U1L1": { "reading": true,  "exercises": true  },
-    "B1U1L2": { "reading": true, "exercises": false },
+    "B1U1L2": { "reading": true, "exercises": true },
     "B1U1L3": { "reading": true,  "exercises": false },
-    "B1U1L4": { "reading": true, "exercises": false },
-    "B1U1L5": { "reading": true, "exercises": false },
-    "B1U1L6": { "reading": true, "exercises": false },
-    "B1U1L7": { "reading": true, "exercises": false },
-    "B1U1L8": { "reading": true, "exercises": false },
-    "B1U1L9": { "reading": true, "exercises": false }
+    "B1U1L4": { "reading": true, "exercises": true },
+    "B1U1L5": { "reading": true, "exercises": true },
+    "B1U1L6": { "reading": true, "exercises": true },
+    "B1U1L7": { "reading": true, "exercises": true },
+    "B1U1L8": { "reading": true, "exercises": true },
+    "B1U1L9": { "reading": true, "exercises": true }
   }
 }
